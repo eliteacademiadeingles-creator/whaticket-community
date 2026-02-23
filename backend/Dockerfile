@@ -1,5 +1,4 @@
-FROM node:14 as build-deps
-
+FROM node:18-bullseye as build-deps
 RUN apt-get update && apt-get install -y wget
 
 ENV DOCKERIZE_VERSION v0.6.1
