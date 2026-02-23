@@ -20,7 +20,7 @@ RUN chmod +x /usr/local/bin/dumb-init
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/backend
 COPY package*.json ./
 RUN npm install
 
